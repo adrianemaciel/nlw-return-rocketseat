@@ -12,7 +12,7 @@
   --brand-beige: hsl(39, 100%, 97%);
   --brand-light: hsl(148, 23%, 89%);
 
-
+  --nav-height: 7.2rem;
 
   font-size: 62.5%; /*1rem = 10px */  
 }
@@ -21,21 +21,22 @@ body {
   font-size: 1.6rem;
   text-align: center;
 }
-/*======HEADER==============*/
 
 .wrapper {
   width: 37.5rem;
-  margin-right: auto;
-  margin-left:auto;
+  margin-inline: auto;
+  padding-inline: 2.4rem;
 }
 
+/*======HEADER==============*/
+
 header {
-  margin-top: 4.1rem;
+  margin-top: calc(4.1rem + var(--nav-height));
 }
 header::before {
   content: "";
   width: 100vw;
-  height: 108rem;
+  height: calc(108rem + var(--nav-height));
   background-color: var(--brand-light);
 
   display:block;
@@ -44,7 +45,6 @@ header::before {
   left: 0;
   z-index: -1;
 }
-
 
 header h4 {
   font-size: 1.4rem;
@@ -121,8 +121,8 @@ header img {
   line-height: 130%;
 
   margin-bottom: 0.4rem;
-
 }
+
 .stat p {
   margin: 0;
   color: var(--primary-color);
@@ -134,7 +134,30 @@ header img {
 
 nav {
   display: flex;
+
+  height: var(--nav-height);
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav .wrapper {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 2.4rem;
+}
+
+nav.scroll {
+  background: var(--primary-color);
+  width: 100vw;
+}
+
+nav.scroll svg:nth-child(1) path {
+  fill: white;
+}
+
+nav.scroll svg:nth-child(2) path {
+  stroke: white;
 }
