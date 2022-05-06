@@ -13,8 +13,8 @@
   <title>DoctorCare</title>
 
   </head>
-  <body onscroll="onScroll()">
-    <nav id="navigation" class="scroll">
+  <body onscroll="onScroll()" class="menu-expanded">
+    <nav id="navigation" class="">
       <div class="wrapper">
         <a class="logo" href="#">
         <svg width="133" height="18" viewBox="0 0 133 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@
             <li><a href="#"> Sobre </a></li>
           </ul>
 
-          <button>Agende sua consulta</button>
+          <a class="button" href="#">Agende sua consulta</a>
 
           <ul class="social-links">
             <li> 
@@ -65,11 +65,21 @@
           </ul>
         </div>
 
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <button class="open-menu">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <button class="close-menu">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+        </button>
+
       </div>
     </nav>
 
