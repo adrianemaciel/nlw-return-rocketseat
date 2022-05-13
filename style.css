@@ -166,13 +166,6 @@ nav.scroll {
   width: 100vw;
 }
 
-nav.scroll svg:nth-child(1) path {
-  fill: white;
-}
-
-nav.scroll svg:nth-child(2) path {
-  stroke: white;
-}
 
 /*========MENU-EXPANDED=========*/
 
@@ -201,10 +194,29 @@ body.menu-expanded .menu {
 
   width: 100vw;
   height: 100vh;
+
+  padding-top: var(--nav-height);
 }
 
 body.menu-expanded nav {
   position: relative;
+}
+
+.menu ul:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  margin-top: 6rem;
+
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 .menu .button {
@@ -231,4 +243,18 @@ body.menu-expanded nav {
   align-items: center;
   justify-content: center;
   gap: 3.2rem;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded nav button {
+  position: relative;
+  z-index: 10;
+}
+
+body.menu-expanded .logo path {
+  fill: white;
+}
+
+body.menu-expanded button path {
+  stroke: white;
 }
