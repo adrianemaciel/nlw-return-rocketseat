@@ -42,6 +42,10 @@ ul {
   list-style: none;
 }
 
+section {
+  padding-block: 10rem;
+}
+
 /*======HEADER==============*/
 
 header {
@@ -301,6 +305,23 @@ body.menu-expanded button path {
   margin-bottom: 6rem;
 }
 
-.card {
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+}
+
+#services .card {
   padding: 2.4rem;
+  text-align: left;
+  background: white;
+
+  border: 1px solid var(--brand-light);
+
+  border-radius: .6rem;
+}
+
+#services .card h3 {
+  margin-block: 1.6rem;
 }
