@@ -12,10 +12,16 @@
 
   --brand-beige: hsl(39, 100%, 97%);
   --brand-light: hsl(148, 23%, 89%);
+  --bg-light: hsl(180, 14%, 97%, 1);
+
 
   --nav-height: 7.2rem;
 
   font-size: 62.5%; /*1rem = 10px */  
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -30,6 +36,8 @@ body {
   text-align: center;
 
   overflow: overlay;
+
+  background: var(--bg-light);
 }
 
 .wrapper {
