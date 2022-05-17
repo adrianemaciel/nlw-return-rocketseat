@@ -277,3 +277,30 @@ body.menu-expanded .logo path {
 body.menu-expanded button path {
   stroke: white;
 }
+
+/*======SERVICES==============*/
+
+#services header h4 {
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+
+  color: var(--primary-color);
+
+  text-transform: uppercase;
+
+  margin-bottom: 1.6rem;
+}
+
+#services header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+
+  color: var(--headline);
+
+  margin-bottom: 6rem;
+}
+
+.card {
+  padding: 2.4rem;
+}
