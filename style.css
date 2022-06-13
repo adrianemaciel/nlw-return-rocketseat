@@ -479,69 +479,70 @@ footer .social-links {
 
 @media (min-width: 1024px) {
   
-  /*======GERAL==============*/
+/*======GERAL==============*/
 
-  .wrapper {
-    width: min(112rem, 100%);
-  }
-
-  /*reset*/
-  nav#navigation .wrapper * {
-    margin: 0;
-    padding: 0;
-    visibility: initial;
-    display: initial;
-    opacity: initial;
-    flex-direction: initial;
-    position: initial;
-    font-size: initial;
-    font-weight: initial;
-    transform: initial;
-    color: initial;
-    background-color: initial;
-  }
-
-    nav#navigation .close-menu,
-    nav#navigation .open-menu,
-    nav#navigation .social-links {
-      display: none;
-    }
-
-    nav#navigation .menu {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 60%;
-    }
-
-    nav#navigation .menu ul:nth-child(1) {
-      display: flex;
-      gap: 3.2rem;
-    }
-
-    nav#navigation .menu ul li a {
-      color: var(--brand-light);
-      opacity: 0.7;
-    }
-
-    nav#navigation .menu a.button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem 2.4rem;
-
-      border: 1px solid var(--brand-light);
-      border-radius: 4rem;
-
-      color: var(--brand-light);
-      font-weight: 700;
-      font-size: 1.4rem;
-      line-height: 1.8rem;
-      text-transform: uppercase;
-    }
-
-    nav#navigation.scroll .menu ul li a {
-      color: var(--brand-light);
-      opacity: 0.6;
-    }
+.wrapper {
+  width: min(112rem, 100%);
 }
+
+/*reset*/
+
+nav#navigation .wrapper * {
+  margin: 0;
+  padding: 0;
+  visibility: initial;
+  display: initial;
+  opacity: initial;
+  flex-direction: initial;
+  position: initial;
+  font-size: initial;
+  font-weight: initial;
+  transform: initial;
+  color: initial;
+  background-color: initial;
+}
+
+nav#navigation .close-menu,
+nav#navigation .open-menu,
+nav#navigation .social-links {
+  display: none;
+}
+
+nav#navigation .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+nav#navigation .menu ul:nth-child(1) {
+  display: flex;
+  gap: 3.2rem;
+}
+
+nav#navigation .menu ul li a {
+  color: var(--brand-light);
+  opacity: 0.7;
+}
+
+nav#navigation .menu a.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2.4rem;
+
+  border: 1px solid var(--brand-light);
+  border-radius: 4rem;
+
+  color: var(--brand-light);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+}
+
+nav#navigation.scroll .menu ul li a {
+  color: var(--brand-light);
+  opacity: 0.6;
+}
+} 
