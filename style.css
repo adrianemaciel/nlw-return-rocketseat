@@ -12,6 +12,8 @@
 
   --brand-beige: hsl(39, 100%, 97%);
   --brand-light: hsl(148, 23%, 89%);
+  --brand-light-2: hsl(180, 14%, 97%);
+
   --brand-dark: hsl(170, 100%, 14%);
 
 
@@ -500,6 +502,7 @@ nav#navigation .wrapper * {
   transform: initial;
   color: initial;
   background-color: initial;
+  filter: initial;
 }
 
 nav#navigation .close-menu,
@@ -541,8 +544,64 @@ nav#navigation .menu a.button {
   text-transform: uppercase;
 }
 
+nav#navigation a.button:hover {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+}
+
 nav#navigation.scroll .menu ul li a {
-  color: var(--brand-light);
+  color: var(--brand-light-2);
   opacity: 0.6;
+}
+
+nav#navigation.scroll .menu a.button {
+  border-color: white;
+  color: white;
+}
+
+nav#navigation .menu li a {
+  transition: opacity .4s;
+}
+
+nav#navigation .menu li a:hover {
+  opacity: 1;
+  font-weight: 700;
+}
+
+nav#navigation .menu li a::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: white;
+
+  position: relative;
+  bottom: -2rem;
+  left: -0.5rem;
+  
+
+  display: block;
+
+  transition: width 0.2s;
+}
+
+nav#navigation.scroll .menu li a::after {
+  background-color: white;
+}
+
+nav#navigation .menu li a:hover::after {
+  padding-inline: 0.8rem;
+  width: 100%;
+}
+
+nav#navigation.scroll .menu li a:hover {
+  opacity: 1;
+}
+
+nav#navigation.scroll .menu a.button:hover {
+  background-color: var(--primary-color);
+  filter: brightness(1.3);
+  border: none;
+
 }
 } 
