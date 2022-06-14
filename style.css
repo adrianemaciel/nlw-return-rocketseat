@@ -491,7 +491,7 @@ section {
   padding-block: 16rem;
 }
 
-section h2 {
+section header h2 {
   font-size: 4rem;
   line-height: 5.2rem;
 }
@@ -717,5 +717,14 @@ nav#navigation.scroll .menu a.button:hover {
 
 #about .content p {
   margin-bottom: 0;
+}
+
+/*======CONTACT==============*/
+#contact .wrapper {
+  grid-template-columns: 1fr 57.5rem;
+  grid-template-areas: 'A B ';
+}
+#contact h2 {
+  width: 40.4rem;
 }
 } 
